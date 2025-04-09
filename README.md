@@ -35,14 +35,17 @@ graph TD
     B --> C1[Wikipedia Tool]
     B --> C2[Arxiv Tool]
     B --> C3[LangSmith Retriever Tool]
-    C3 --> D[Web Page Documents via WebBaseLoader]
-    D --> E[Split and Vectorize Documents with FAISS + OllamaEmbeddings]
-    E --> C3
+
     C1 --> F[Wikipedia API]
     C2 --> G[Arxiv API]
     F --> H[Wikipedia Result]
     G --> I[Arxiv Result]
-    C3 --> J[LangSmith Result]
+
+    C3 --> D[Web Page Documents via WebBaseLoader]
+    D --> E[Split and Vectorize Documents with FAISS + OllamaEmbeddings]
+    E --> C3
+
     H --> K[LLM Response]
     I --> K
-    J --> K
+    D --> K[LLM Response]
+
