@@ -16,4 +16,8 @@ wikipedia
 arxiv
 langchainhub
 langchain-ollama
+groq
+beautifulsoup4
+langchain-groq
+sentence_transformers
 #ipykernel
